@@ -52,7 +52,6 @@ aside {
   background: var(--background);
   border-right: 1px solid var(--border);
   padding: 5rem;
-  min-height: 1500px;
   .block {
     margin-bottom: 5rem;
     h3 {
@@ -95,10 +94,32 @@ aside {
         margin: 0 1rem;
       }
     }
+    .social-container {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin: 2rem 0;
+      i {
+        flex: 0 0 50px;
+        margin-right: 1rem;
+        font-size: 2rem;
+      }
+      p {
+        flex: auto;
+        margin: 0;
+      }
+    }
   }
 }
 
 main {
   grid-area: main;
-  // background: purple;
+  padding: 5rem;
+  h2 {
+    margin-bottom: 4rem;
+  }
+  p {
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+  }
 }
