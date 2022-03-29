@@ -1,5 +1,6 @@
 @import "reset";
 @import "base";
+@import "utils";
 @import "classes";
 
 .grid-container {
@@ -40,7 +41,7 @@ header {
   // background: red;
   padding: 4rem;
   background: var(--background);
-  border-right: 1px solid #ddd;
+  border-right: 1px solid var(--border);
   img {
     border-radius: 50%;
     transform: rotate(-151deg);
@@ -121,5 +122,32 @@ main {
   p {
     letter-spacing: 0.1rem;
     line-height: 3rem;
+  }
+  .experience {
+    margin: 6rem 0;
+    display: flex;
+    .timeline {
+      text-align: center;
+      color: var(--hint);
+      padding-right: 2rem;
+      border-right: 1px solid var(--border);
+      p {
+        margin: 0;
+      }
+    }
+    .content {
+      padding: 0 1rem;
+      h3 {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+      ul {
+        margin: 2rem 0;
+        list-style: circle;
+        padding-left: 4rem;
+      }
+    }
   }
 }
